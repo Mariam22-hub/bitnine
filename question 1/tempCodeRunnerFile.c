@@ -1,0 +1,1 @@
+handle the special case of inputting an already existed node instead of a number
