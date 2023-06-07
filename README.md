@@ -6,8 +6,11 @@
 Compiler version: gcc.exe (x86_64-win32-sjlj-rev0, Built by MinGW-W64 project) 8.1.0
 Operating system: Windows 10 pro
 IDE: Visual studio code
-
 ````
+
+## Run The code
+
+
 ### Contents
 
 #### 1) Readme file
@@ -103,6 +106,28 @@ This operation handles the special case of the sub node (which takes 2 nodes ins
 
 #### 3) [Problem 2 folder](https://github.com/Mariam22-hub/bitnine/tree/main/question%202)
 
+#### Method 1:
+````
+int fib1(int n)
+{
+    if (n <= 2)
+        return n;
+    return fib1(n - 2) + fib1(n - 3);
+}
+````
+##### Advantages
+- Simplicity: The code is straightforward and easy to understand, as it directly follows the mathematical definition of the Fibonacci sequence.
+- Readability: The recursive function mirrors the recursive nature of the Fibonacci sequence, making the code readable and intuitive.
+- Conciseness: The code is relatively short, which can be advantageous in terms of code maintenance and debugging. 
+- A perfect demonstration of how recursion works, for newbies
+- Debugging: Recursive code can be harder to debug and understand than non-recursive code, especially if the function has multiple base cases or if the recursion is nested.
+
+##### Disadvantages
+- Exponential Time Complexity: The main disadvantage of this approach is the exponential time complexity. The function makes multiple recursive calls, resulting in redundant computations and a high number of function calls. As a result, the time complexity is approximately O(2^n), making it highly inefficient for larger values of n.
+- Redundant Computations: The function recalculates the Fibonacci values for the same input multiple times. For example, fib1(n-2) and fib1(n-3) both calculate the Fibonacci value for n-3, leading to redundant computations and performance overhead.
+- Stack Overflow: For large values of n, the recursive function may exceed the stack's capacity, causing a stack overflow and program termination.
+- Lack of Memoization: The code does not incorporate any form of memoization, meaning it does not store intermediate Fibonacci values for reuse. This further contributes to redundant computations and worsens the time complexity.
+- Slow for large numbers: Calculating the Fibonacci series using recursion can be slower than using an iterative approach for large numbers, as the function has to be called multiple times to calculate each term.
 
 
 
