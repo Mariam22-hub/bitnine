@@ -78,6 +78,8 @@ Node* makeParentNode (void* num1, void* num2){
 
     node->type = globalType;
 
+    // handling the special case of inputting an already existed node instead of a number:->
+
 //    equate the left and right nodes of the parent created with these input nodes, if they already exist
     if (nodeExists(num1)){
         node->left = num1;
