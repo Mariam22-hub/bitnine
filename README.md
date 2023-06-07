@@ -1,4 +1,4 @@
-# bitnine
+# Bitnine Assessment
 
 ## Development environment & Operating system
 
