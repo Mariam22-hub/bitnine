@@ -43,7 +43,7 @@ int fib2(int n)
 
     for (i = 3; i <= n; i++)
     {
-        /* Add the previous 2 numbers in the series
+        /* Add the previous (n-2) & (n-3) numbers in the series
            and store it */
         f[i] = f[i-2] + f[i-3];
     }
