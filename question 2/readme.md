@@ -50,7 +50,7 @@ int fib2(int n)
 - It takes a lot of memory to store the calculated result of every subproblem without ensuring if the stored value will be utilized or not.
 - Many times, output value gets stored and never gets utilized in the next subproblems while execution. It leads to unnecessary memory utilization.
 
-#### Method 2 (Using Optimized Space (aka iterative)):
+#### Method 3 (Using Optimized Space (aka iterative)):
 ````
 int fib3(int n)
 {
