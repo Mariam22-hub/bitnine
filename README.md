@@ -31,13 +31,15 @@ typedef struct Node {
 ````
 
 #### 2) [Problem 1 folder](https://github.com/Mariam22-hub/bitnine/tree/main/question%201)
-This folder contains 2 solutions for question 1
-a) The main solution [Solution 1] (https://github.com/Mariam22-hub/bitnine/blob/main/question%201/q1.c) treats the add/sub/mul/fib nodes as parent nodes (created by the makeParentNodes function, and the makeChildNodes function creates the left and right of each parent (which hold the values to be operated on) 
+*This folder contains 2 solutions for question 1*
+
+<br>
+
+**a)** [The Main solution](https://github.com/Mariam22-hub/bitnine/blob/main/question%201/q1.c) treats the add/sub/mul/fib nodes as parent nodes (created by the makeParentNodes function, and the makeChildNodes function creates the left and right of each parent (which hold the values to be operated on) 
 
 The calculate function is the same for both solutions, it uses recursion to calculate all left nodes of a parent together, then all right nodes, and eventually calculate the resulta together to obtain the final results
 
-Notes: 
-<br>
+#### Notes: 
 
 1- 
 ```` 
@@ -55,11 +57,10 @@ This array is used to store all created parent nodes so that we can linearly sea
 The global variable count is used to index the nodes into the array, each time a node is added, it gets incremented. The index of each node is equal to the count at the time of adding it to the array
 <br>
 
-b) The [Second Solution](https://github.com/Mariam22-hub/bitnine/blob/main/question%201/anotherSolution_q1.c) contains the same logic. The difference is this utilizes the factory design pattern. It's implemented using functions to pointers where each operation (add/sub/...) has it's own function to create its objects from. I thought this problem is perfect for a design pattern such as this, but C is not an object-oriented language. So after reading some articles, i found a way to get the same functionality without using OOP.
+**b)**  The [Second Solution](https://github.com/Mariam22-hub/bitnine/blob/main/question%201/anotherSolution_q1.c) contains the same logic. The difference is this utilizes the factory design pattern. It's implemented using functions to pointers where each operation (add/sub/...) has it's own function to create its objects from. I thought this problem is perfect for a design pattern such as this, but C is not an object-oriented language. So after reading some articles, i found a way to get the same functionality without using OOP.
 
 
-Notes:
-<br>
+#### Notes:
 
 1- 
 ````
